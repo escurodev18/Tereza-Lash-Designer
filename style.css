@@ -1,0 +1,1042 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px
+}
+
+body {
+    margin: 0;
+    background: #171514;
+    color: #f8f1eb;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.65
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.announcement {
+    text-align: center;
+    padding: 8px 15px;
+    background: #d6aa9b;
+    color: #241b19;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase
+}
+
+.site-header {
+    height: 86px;
+    padding: 0 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff12;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #171514ed;
+    backdrop-filter: blur(14px)
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.brand-mark {
+    font-family: "Playfair Display", serif;
+    color: #e8bfae;
+    border: 1px solid #b98677;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    font-size: 17px;
+    font-style: italic
+}
+
+.brand-name {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    letter-spacing: .2px;
+    line-height: 1.05
+}
+
+.brand-name small {
+    display: block;
+    font: 600 8px "DM Sans", sans-serif;
+    letter-spacing: 3px;
+    color: #c89e90;
+    margin-top: 6px
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    font-size: 12px;
+    color: #d7ccc5
+}
+
+.nav>a:not(.nav-cta):hover,
+.footer-links a:hover {
+    color: #e9bba9
+}
+
+.nav-cta {
+    background: #e4b8a7;
+    color: #231b19;
+    padding: 12px 18px;
+    border-radius: 3px;
+    font-weight: 700
+}
+
+.nav-cta span {
+    margin-left: 12px
+}
+
+.menu-toggle {
+    display: none
+}
+
+.hero {
+    min-height: 660px;
+    padding: 80px 11% 66px;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 8%;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 78% 47%, #6c49402c, transparent 43%), #171514
+}
+
+.hero-glow {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 1px solid #c58e7c1c;
+    border-radius: 50%;
+    right: 4%;
+    top: 12%;
+    pointer-events: none
+}
+
+.hero-copy {
+    position: relative;
+    z-index: 1;
+    max-width: 560px
+}
+
+.eyebrow {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #d8a998
+}
+
+.eyebrow i {
+    display: inline-block;
+    width: 22px;
+    height: 1px;
+    background: #d8a998;
+    vertical-align: middle;
+    margin-right: 9px
+}
+
+.hero h1,
+.section-heading h2,
+.intro h2,
+.price-intro h2,
+.booking h2 {
+    font: 400 clamp(48px, 6vw, 78px)/1.07 "Playfair Display", serif;
+    letter-spacing: -2px;
+    margin: 22px 0
+}
+
+.hero h1 em,
+.section-heading h2 em,
+.intro h2 em,
+.price-intro h2 em,
+.booking h2 em {
+    color: #d9ad9d;
+    font-weight: 400
+}
+
+.hero-copy>p,
+.intro-copy p,
+.price-intro>p,
+.booking-inner>p {
+    max-width: 460px;
+    color: #bdb0a8;
+    font-size: 14px;
+    line-height: 1.9
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    margin-top: 34px
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 15px 22px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    transition: .25s
+}
+
+.button-primary {
+    background: #dfb2a1;
+    color: #211917
+}
+
+.button-primary:hover,
+.nav-cta:hover {
+    background: #f0c9b9;
+    transform: translateY(-2px)
+}
+
+.text-link,
+.underlined-link {
+    font-size: 11px;
+    color: #e3c3b6;
+    border-bottom: 1px solid #a77f70;
+    padding-bottom: 6px
+}
+
+.text-link span {
+    margin-left: 10px
+}
+
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 55px;
+    color: #9d918b;
+    font-size: 10px;
+    letter-spacing: .5px
+}
+
+.stars {
+    color: #d8a998;
+    letter-spacing: 3px
+}
+
+.hero-visual {
+    height: 460px;
+    max-width: 400px;
+    width: 100%;
+    justify-self: center;
+    position: relative;
+    padding: 16px;
+    border: 1px solid #b9897a;
+    border-radius: 48% 48% 4px 4px
+}
+
+.hero-photo-frame {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 48% 48% 2px 2px;
+    background: #44322c
+}
+
+.hero-photo-frame img {
+    filter: brightness(.85);
+    object-position: center
+}
+
+.floating-note {
+    position: absolute;
+    bottom: 44px;
+    left: -65px;
+    background: #eee0d7;
+    color: #2b211e;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    box-shadow: 0 12px 40px #0005;
+    font-size: 11px;
+    line-height: 1.4
+}
+
+.floating-note b {
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    font-weight: 500
+}
+
+.note-icon {
+    font-size: 25px;
+    color: #a66f60
+}
+
+.vertical-label {
+    position: absolute;
+    right: -34px;
+    top: 65px;
+    writing-mode: vertical-rl;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #d8b7a9
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: 25px;
+    left: 11%;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #a8958b
+}
+
+.hero-bottom span {
+    display: inline-block;
+    width: 75px;
+    height: 1px;
+    background: #a77f70;
+    vertical-align: middle;
+    margin: 0 12px
+}
+
+.section-pad {
+    padding: 115px 11%
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: .85fr 1fr;
+    gap: 12%;
+    align-items: center;
+    background: #211d1b
+}
+
+.intro-image {
+    height: 430px;
+    position: relative;
+    max-width: 380px;
+    border: 1px solid #bd8e7d;
+    padding: 12px
+}
+
+.intro-image img {
+    object-position: center 38%;
+    filter: saturate(.8)
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 26px;
+    right: -35px;
+    background: #dcb2a2;
+    color: #2b211e;
+    padding: 12px 18px;
+    font-size: 10px
+}
+
+.image-caption span {
+    margin-left: 15px
+}
+
+.intro h2,
+.price-intro h2 {
+    font-size: clamp(38px, 4.5vw, 58px);
+    letter-spacing: -1.2px
+}
+
+.intro-copy p {
+    max-width: 510px
+}
+
+.intro-copy .muted {
+    color: #94877f
+}
+
+.intro-copy .underlined-link {
+    display: inline-block;
+    margin-top: 18px
+}
+
+.services {
+    background: #f0e7df;
+    color: #211b19
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 45px
+}
+
+.section-heading .eyebrow {
+    color: #9d6e60
+}
+
+.section-heading h2 {
+    font-size: clamp(40px, 4.5vw, 58px);
+    margin: 13px 0 0
+}
+
+.section-heading h2 em {
+    color: #a87566
+}
+
+.section-heading>p {
+    max-width: 330px;
+    color: #786b64;
+    font-size: 12px;
+    margin-bottom: 8px
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px
+}
+
+.service-card {
+    padding: 30px 27px 27px;
+    border: 1px solid #cdb9ac;
+    min-height: 260px;
+    position: relative;
+    transition: .25s
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px #4c33221a
+}
+
+.service-card.featured {
+    background: #2a211f;
+    color: #f5e9e0;
+    border-color: #2a211f
+}
+
+.service-number {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #a7796a
+}
+
+.service-symbol {
+    font: 28px "Playfair Display", serif;
+    color: #b47f70;
+    margin-top: 18px
+}
+
+.service-card h3 {
+    font: 500 23px "Playfair Display", serif;
+    margin: 10px 0
+}
+
+.service-card p {
+    font-size: 11px;
+    line-height: 1.8;
+    color: #81736b;
+    min-height: 60px
+}
+
+.service-card.featured p {
+    color: #b9a9a0
+}
+
+.service-card a {
+    font-size: 10px;
+    font-weight: 700;
+    color: #a87566
+}
+
+.service-card a span {
+    margin-left: 12px
+}
+
+.price-section {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 8%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: #171514
+}
+
+.price-decoration {
+    position: absolute;
+    right: 3%;
+    top: 0;
+    font: 300 250px "Playfair Display", serif;
+    color: #ffffff05;
+    pointer-events: none
+}
+
+.price-intro {
+    position: relative
+}
+
+.price-intro h2 {
+    font-size: clamp(39px, 4.4vw, 56px)
+}
+
+.price-intro>p {
+    max-width: 310px
+}
+
+.price-stamp {
+    margin-top: 55px;
+    width: 125px;
+    height: 125px;
+    border: 1px solid #a7796a;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #d8b09f;
+    transform: rotate(-10deg)
+}
+
+.price-stamp b {
+    font-size: 8px;
+    letter-spacing: 1px
+}
+
+.price-stamp span {
+    font-size: 20px;
+    margin-top: 5px
+}
+
+.price-panel {
+    background: #f0e6de;
+    color: #2b211e;
+    padding: 29px 34px;
+    position: relative;
+    box-shadow: 0 20px 70px #0003
+}
+
+.price-panel-top,
+.price-panel-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+    letter-spacing: 1.7px;
+    color: #967467
+}
+
+.price-panel-top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d6c2b7
+}
+
+.price-list {
+    padding: 4px 0
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
+    border-bottom: 1px solid #ddcec4
+}
+
+.price-row small {
+    font-size: 8px;
+    letter-spacing: 1.8px;
+    color: #a47c6e
+}
+
+.price-row h3 {
+    font: 500 20px "Playfair Display", serif;
+    margin: 2px 0 0
+}
+
+.price-row strong {
+    font: 500 23px "Playfair Display", serif;
+    color: #a66f60;
+    white-space: nowrap
+}
+
+.price-row strong span {
+    font-size: 14px
+}
+
+.price-panel-bottom {
+    padding-top: 22px;
+    letter-spacing: .2px;
+    font-size: 10px
+}
+
+.price-panel-bottom a {
+    background: #2b211e;
+    color: #f6e9e0;
+    padding: 12px 16px;
+    font-size: 10px;
+    letter-spacing: .3px
+}
+
+.portfolio {
+    background: #211d1b
+}
+
+.portfolio .section-heading {
+    align-items: end
+}
+
+.portfolio .section-heading h2 {
+    color: #f8f1eb
+}
+
+.portfolio .underlined-link {
+    white-space: nowrap
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: stretch
+}
+
+.gallery-item {
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    background: #45352e;
+    margin: 0
+}
+
+.gallery-item.tall {
+    height: 310px
+}
+
+.gallery-item img {
+    transition: transform .6s;
+    filter: saturate(.8)
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06)
+}
+
+.gallery-item figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 12px 12px;
+    background: linear-gradient(transparent, #0009);
+    font-size: 9px;
+    letter-spacing: .5px
+}
+
+.quote-tile {
+    background: #d9b6a5;
+    color: #2c211e;
+    display: grid;
+    place-items: center;
+    text-align: center
+}
+
+.quote-tile div {
+    font: italic 25px/1.35 "Playfair Display", serif
+}
+
+.quote-tile em {
+    color: #805b4f
+}
+
+.quote-tile span {
+    display: block;
+    font-size: 24px;
+    margin-top: 15px
+}
+
+.booking {
+    background: linear-gradient(110deg, #9b6f61, #c59684);
+    color: #241b18;
+    text-align: center;
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden
+}
+
+.booking-inner {
+    position: relative;
+    z-index: 1
+}
+
+.booking .eyebrow {
+    color: #3c2924
+}
+
+.booking h2 {
+    font-size: clamp(45px, 5.5vw, 68px);
+    margin: 15px 0
+}
+
+.booking h2 em {
+    color: #f5e4d9
+}
+
+.booking-inner>p {
+    color: #4a342d;
+    margin: 0 auto 28px
+}
+
+.button-light {
+    background: #f3e7df;
+    color: #2a201d
+}
+
+.button-light:hover {
+    background: #fff;
+    transform: translateY(-2px)
+}
+
+.booking-flower {
+    position: absolute;
+    right: 12%;
+    top: -90px;
+    font: 260px "Playfair Display", serif;
+    color: #ffffff24
+}
+
+.footer {
+    padding: 38px 8% 24px;
+    background: #121110;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px
+}
+
+.footer-brand {
+    width: max-content
+}
+
+.footer>p {
+    font: italic 14px "Playfair Display", serif;
+    color: #a99a91;
+    text-align: center
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 22px;
+    font-size: 10px;
+    color: #d6b6a8
+}
+
+.copyright {
+    grid-column: 1/-1;
+    border-top: 1px solid #ffffff14;
+    padding-top: 18px;
+    text-align: center;
+    color: #766b65;
+    font-size: 9px
+}
+
+.whatsapp-float {
+    position: fixed;
+    z-index: 30;
+    right: 24px;
+    bottom: 24px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #d9b09f;
+    box-shadow: 0 8px 25px #0006;
+    transition: .2s
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.04)
+}
+
+.whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+    fill: #211b18
+}
+
+@media(max-width:900px) {
+    .site-header {
+        padding: 0 5%
+    }
+
+    .nav {
+        gap: 18px
+    }
+
+    .hero {
+        padding-left: 8%;
+        padding-right: 8%;
+        gap: 5%
+    }
+
+    .section-pad {
+        padding: 85px 8%
+    }
+
+    .price-section {
+        gap: 5%
+    }
+
+    .gallery-item {
+        height: 220px
+    }
+
+    .gallery-item.tall {
+        height: 260px
+    }
+}
+
+@media(max-width:680px) {
+    .announcement {
+        font-size: 8px
+    }
+
+    .site-header {
+        height: 72px
+    }
+
+    .brand-name {
+        font-size: 18px
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: 0;
+        padding: 10px
+    }
+
+    .menu-toggle span {
+        width: 24px;
+        height: 1px;
+        background: #e7c2b4
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: #1d1917;
+        padding: 25px 7%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        border-bottom: 1px solid #ffffff20
+    }
+
+    .nav.open {
+        display: flex
+    }
+
+    .nav-cta {
+        text-align: center
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 65px 8% 75px;
+        gap: 48px
+    }
+
+    .hero h1 {
+        font-size: 54px
+    }
+
+    .hero-visual {
+        height: 390px;
+        width: 82%;
+        max-width: 340px
+    }
+
+    .floating-note {
+        left: -35px;
+        bottom: 30px
+    }
+
+    .hero-bottom {
+        left: 8%
+    }
+
+    .hero-note {
+        margin-top: 35px
+    }
+
+    .section-pad {
+        padding: 72px 7%
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 45px
+    }
+
+    .intro-image {
+        height: 350px;
+        width: 85%;
+        margin: 0 auto
+    }
+
+    .intro-copy {
+        padding: 0 3%
+    }
+
+    .section-heading {
+        display: block
+    }
+
+    .section-heading>p {
+        margin-top: 20px
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr
+    }
+
+    .service-card {
+        min-height: 220px
+    }
+
+    .service-card p {
+        min-height: 0
+    }
+
+    .price-section {
+        grid-template-columns: 1fr;
+        gap: 35px
+    }
+
+    .price-stamp {
+        display: none
+    }
+
+    .price-panel {
+        padding: 24px 20px
+    }
+
+    .price-row h3 {
+        font-size: 17px
+    }
+
+    .price-row strong {
+        font-size: 20px
+    }
+
+    .price-panel-bottom {
+        gap: 15px;
+        align-items: flex-start
+    }
+
+    .price-panel-bottom span {
+        max-width: 170px;
+        line-height: 1.5
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .gallery-item,
+    .gallery-item.tall {
+        height: 240px
+    }
+
+    .quote-tile {
+        min-height: 240px
+    }
+
+    .gallery-item:last-child {
+        display: none
+    }
+
+    .booking {
+        padding: 75px 20px
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+        padding: 35px 7% 22px
+    }
+
+    .footer-brand {
+        margin: auto
+    }
+
+    .footer>p {
+        margin: 0
+    }
+
+    .footer-links {
+        justify-content: center
+    }
+
+    .copyright {
+        grid-column: auto;
+        width: 100%
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        right: 16px;
+        bottom: 16px
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .65s ease, transform .65s ease
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0)
+}
